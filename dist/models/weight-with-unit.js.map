@@ -1,0 +1,1 @@
+{"version":3,"file":"weight-with-unit.js","sourceRoot":"","sources":["../../src/models/weight-with-unit.ts"],"names":[],"mappings":";;;AAAA,iCAAoC;AAEpC,IAAiB,cAAc,CAS9B;AATD,WAAiB,cAAc;IAM7B,SAAgB,SAAS,CAAC,aAAoB;QAC5C,OAAO,GAAG,aAAa,CAAC,KAAK,IAAI,WAAI,CAAC,SAAS,CAAC,aAAa,CAAC,IAAI,CAAC,EAAE,CAAC;IACxE,CAAC;IAFe,wBAAS,YAExB,CAAA;AACH,CAAC,EATgB,cAAc,8BAAd,cAAc,QAS9B"}

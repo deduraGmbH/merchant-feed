@@ -1,0 +1,1 @@
+{"version":3,"file":"date-range.js","sourceRoot":"","sources":["../../src/models/date-range.ts"],"names":[],"mappings":";;;AAAA,IAAiB,SAAS,CASzB;AATD,WAAiB,SAAS;IAMxB,SAAgB,SAAS,CAAC,SAA0B;QAClD,OAAO,GAAG,SAAS,CAAC,QAAQ,CAAC,WAAW,EAAE,IAAI,SAAS,CAAC,MAAM,CAAC,WAAW,EAAE,EAAE,CAAC;IACjF,CAAC;IAFe,mBAAS,YAExB,CAAA;AACH,CAAC,EATgB,SAAS,yBAAT,SAAS,QASzB"}
