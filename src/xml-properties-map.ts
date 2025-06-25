@@ -240,5 +240,8 @@ export const xmlPropertiesMap: Record<keyof Product, XmlPropertiesMapNode> = {
   transitTimeLabel: {
     xmlName: "g:transit_time_label",
   },
-  internal_label: { xmlName: "internal_label" },
+  internal_label: {
+    xmlName: "internal_label",
+    allowRepeat: true,
+  },
 };

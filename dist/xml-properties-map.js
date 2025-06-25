@@ -218,6 +218,9 @@ exports.xmlPropertiesMap = {
     transitTimeLabel: {
         xmlName: "g:transit_time_label",
     },
-    internal_label: { xmlName: "internal_label" },
+    internal_label: {
+        xmlName: "internal_label",
+        allowRepeat: true,
+    },
 };
 //# sourceMappingURL=xml-properties-map.js.map

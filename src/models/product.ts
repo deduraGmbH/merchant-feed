@@ -88,5 +88,5 @@ export type Product = {
   minHandlingTime?: number;
   tax?: Tax;
   taxCategory?: string;
-  internal_label?: string;
+  internal_label?: string[];
 };

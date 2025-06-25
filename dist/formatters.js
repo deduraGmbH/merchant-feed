@@ -1,14 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.xmlObjectFormatter = exports.xmlSingleItemProcessor = exports.xmlCustomLabelsFormatter = exports.xmlFixedNumberFormatBuilder = exports.xmlDateFormatter = void 0;
+exports.xmlDateFormatter = xmlDateFormatter;
+exports.xmlFixedNumberFormatBuilder = xmlFixedNumberFormatBuilder;
+exports.xmlCustomLabelsFormatter = xmlCustomLabelsFormatter;
+exports.xmlSingleItemProcessor = xmlSingleItemProcessor;
+exports.xmlObjectFormatter = xmlObjectFormatter;
 function xmlDateFormatter(date) {
     return date && date.toISOString();
 }
-exports.xmlDateFormatter = xmlDateFormatter;
 function xmlFixedNumberFormatBuilder(precision) {
     return (value) => !Number.isNaN(value) && value.toFixed(precision);
 }
-exports.xmlFixedNumberFormatBuilder = xmlFixedNumberFormatBuilder;
 function xmlCustomLabelsFormatter(items = [], _map = {}, root) {
     for (let i = 0; i < 5; i += 1) {
         if (items[i] !== undefined) {
@@ -16,14 +18,12 @@ function xmlCustomLabelsFormatter(items = [], _map = {}, root) {
         }
     }
 }
-exports.xmlCustomLabelsFormatter = xmlCustomLabelsFormatter;
 function xmlSingleItemProcessor(prop, map, root) {
     if (map.xmlFormatter) {
         return map.xmlFormatter(prop, map.items, root);
     }
     return prop;
 }
-exports.xmlSingleItemProcessor = xmlSingleItemProcessor;
 function xmlObjectFormatter(contents, map) {
     const item = {};
     for (const [mapKey, mapValue] of Object.entries(map)) {
@@ -39,5 +39,4 @@ function xmlObjectFormatter(contents, map) {
     }
     return item;
 }
-exports.xmlObjectFormatter = xmlObjectFormatter;
 //# sourceMappingURL=formatters.js.map
